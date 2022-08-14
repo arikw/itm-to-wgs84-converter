@@ -13,12 +13,21 @@ npm install itm-to-wgs84-converter
 ## Node
 
 ```js
-
 // CommonJS
-const converter = require('itm-to-wgs84-converter');
+const ItmToWgs84Converter = require('itm-to-wgs84-converter');
 
 // ES Module
-import converter from 'itm-to-wgs84-converter';
+import ItmToWgs84Converter from 'itm-to-wgs84-converter';
+```
+
+## Browser (CDN)
+
+```js
+// Classic
+<script src="https://cdn.jsdelivr.net/gh/arikw/itm-to-wgs84-converter@1/src/index.js" />
+
+// ES Module
+import ItmToWgs84Converter from 'https://cdn.jsdelivr.net/gh/arikw/itm-to-wgs84-converter@1/dist/itm-to-wgs84-converter.browser.mjs';
 ```
 
 # Usage Examples
@@ -26,25 +35,25 @@ import converter from 'itm-to-wgs84-converter';
 ```js
 // ITM to WGS84
 {
-  const [ latitude, longitude ] = converter.itm2wgs84(194140, 385060);
+  const [ latitude, longitude ] = ItmToWgs84Converter.itm2wgs84(194140, 385060);
   // output: [29.553103541791266, 34.943293095766144]
 }
 
 // WGS84 to ITM
 {
-  const [ east, north ] = converter.wgs842itm(29.553103541791266, 34.943293095766144);
+  const [ east, north ] = ItmToWgs84Converter.wgs842itm(29.553103541791266, 34.943293095766144);
   // output: [194140, 385060]
 }
 
 // ICS to WGS84
 {
-  const [ latitude, longitude ] = converter.ics2wgs84(144140, 885060);
+  const [ latitude, longitude ] = ItmToWgs84Converter.ics2wgs84(144140, 885060);
   // output: [29.553036125579155, 34.943337203496604]
 }
 
 // WGS84 to ICS
 {
-  const [ east, north ] = converter.wgs842ics(29.553036125579155, 34.943337203496604);
+  const [ east, north ] = ItmToWgs84Converter.wgs842ics(29.553036125579155, 34.943337203496604);
   // output: [144140, 885060]
 }
 

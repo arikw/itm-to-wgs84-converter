@@ -1,6 +1,6 @@
 {
   "name": "itm-to-wgs84-converter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Zero dependency ITM to WGS84 coordinates converter",
   "author": "Arik W",
   "license": "SEE LICENSE IN LICENSE.md",
