@@ -24,7 +24,7 @@ import ItmToWgs84Converter from 'itm-to-wgs84-converter';
 
 ```js
 // Classic
-<script src="https://cdn.jsdelivr.net/gh/arikw/itm-to-wgs84-converter@1/src/index.js" />
+<script src="https://cdn.jsdelivr.net/gh/arikw/itm-to-wgs84-converter@1/src/index.js"></script>
 
 // ES Module
 import ItmToWgs84Converter from 'https://cdn.jsdelivr.net/gh/arikw/itm-to-wgs84-converter@1/dist/itm-to-wgs84-converter.browser.mjs';
