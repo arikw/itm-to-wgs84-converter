@@ -1,0 +1,41 @@
+{
+  "name": "itm-to-wgs84-converter",
+  "version": "1.0.0",
+  "description": "A Zero dependency ITM to WGS84 coordinates converter",
+  "author": "Arik W",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
+  "main": "./dist/itm-to-wgs84-converter.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/itm-to-wgs84-converter.mjs",
+      "require": "./dist/itm-to-wgs84-converter.cjs",
+      "default": "./src/itm-to-wgs84-converter.js"
+    }
+  },
+  "files": [
+    "/src",
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arikw/itm-to-wgs84-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arikw/itm-to-wgs84-converter/issues"
+  },
+  "homepage": "https://github.com/arikw/itm-to-wgs84-converter#readme",
+  "keywords": [
+    "israel",
+    "itm",
+    "ics",
+    "wgs84",
+    "converter"
+  ]
+}
