@@ -15,3 +15,6 @@
 *.conf text eol=lf
 *.sql text eol=lf
 .* text eol=lf
+
+*.cs linguist-detectable=false
+*.cpp linguist-detectable=false
