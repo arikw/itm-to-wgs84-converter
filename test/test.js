@@ -8,7 +8,7 @@ describe('converters', () => {
   it('converts itm to wgs84 correctly', () => {
     expect(itm2wgs84(194140, 385060))
       .to.be.an('array')
-      .and.to.have.ordered.members(['29.5531035', '34.9432931']);
+      .and.to.have.ordered.members([29.5531035, 34.9432931]);
   });
 
   it('converts wgs84 to itm to correctly', () => {
@@ -20,7 +20,7 @@ describe('converters', () => {
   it('converts ics to wgs84 correctly', () => {
     expect(ics2wgs84(144140, 885060))
       .to.be.an('array')
-      .and.to.have.ordered.members(['29.5530361', '34.9433372']);
+      .and.to.have.ordered.members([29.5530361, 34.9433372]);
   });
 
   it('converts wgs84 to ics to correctly', () => {
