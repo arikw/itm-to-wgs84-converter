@@ -182,8 +182,8 @@ class Converters {
     const [lat84, lon84] = Converters.Molodensky(lat80, lon80, Converters.eGRS80, Converters.eWGS84);
 
     // final results
-    const lat = lat84 * 180 / Math.PI;
-    const lon = lon84 * 180 / Math.PI;
+    const lat = (lat84 * 180 / Math.PI).toFixed(7);
+    const lon = (lon84 * 180 / Math.PI).toFixed(7);
 
     return [lat, lon];
   }
@@ -213,8 +213,8 @@ class Converters {
     const [lat84, lon84] = Converters.Molodensky(lat80, lon80, Converters.eCLARK80M, Converters.eWGS84);
 
     // final results
-    const lat = lat84 * 180 / Math.PI;
-    const lon = lon84 * 180 / Math.PI;
+    const lat = (lat84 * 180 / Math.PI).toFixed(7);
+    const lon = (lon84 * 180 / Math.PI).toFixed(7);
 
     return [lat, lon];
   }
